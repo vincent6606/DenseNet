@@ -7,6 +7,9 @@ class _DenseLayer(nn.Sequential):
         super(_DenseLayer,self).__init__()
         self.add_module('norm.1',nn.BatchNorm2d(num_input_features)),
         self.add_module('relu.1',nn.ReLU(inplace=True)),
+        
+        #If the bottle neck mode is set, apply feature reduction to limit the growth of features
+        #Why should we expand the number of features by bn_size*growth?
         if bn_size>0:
             
 
