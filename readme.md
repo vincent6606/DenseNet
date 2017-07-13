@@ -1,1 +1,1 @@
-A Pytroch Implementation of Densely Connected Neural Networks
+This repository contains a PyTorch implementation of the paper Densely Connected Convolutional Networks trained on the MNIST dataset. The code is based on this excellent PyTorch example for training DenseNet.(https://github.com/pytorch/vision/blob/master/torchvision/models/densenet.py)
